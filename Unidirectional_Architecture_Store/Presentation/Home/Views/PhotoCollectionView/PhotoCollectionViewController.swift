@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class PhotoCollectionViewController: UIViewController {
+final class PhotoCollectionViewController: DGViewController {
   private lazy var collectionView: UICollectionView = {
     let collectionView = UICollectionView(frame: .zero, collectionViewLayout: self.compositionalLayout)
     collectionView.backgroundColor = .clear
@@ -26,7 +26,7 @@ final class PhotoCollectionViewController: UIViewController {
     layout()
   }
   
-  private func layout() {
+  override func layout() {
     view.addSubview(collectionView)
     collectionView.translatesAutoresizingMaskIntoConstraints = false
     NSLayoutConstraint.activate([
@@ -37,13 +37,9 @@ final class PhotoCollectionViewController: UIViewController {
     ])
   }
   
-  let fractionalSize = NSCollectionLayoutSize(
-    widthDimension: .fractionalWidth(0.2),
-    heightDimension: .fractionalHeight(0.2)
-  )
-  
   private let compositionalLayout: UICollectionViewCompositionalLayout = {
     let fraction: CGFloat = 1 / 3
+    let inset: CGFloat = 3
     
     let itemSize = NSCollectionLayoutSize(
       widthDimension: .fractionalWidth(fraction),
@@ -56,8 +52,12 @@ final class PhotoCollectionViewController: UIViewController {
       heightDimension: .fractionalWidth(fraction)
     )
     let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitems: [item])
+    group.interItemSpacing = .fixed(inset)
     
     let section = NSCollectionLayoutSection(group: group)
+    section.interGroupSpacing = inset
+    let padding: CGFloat = 10
+    section.contentInsets = .init(top: padding, leading: padding, bottom: padding, trailing: padding)
     return UICollectionViewCompositionalLayout(section: section)
   }()
 }
