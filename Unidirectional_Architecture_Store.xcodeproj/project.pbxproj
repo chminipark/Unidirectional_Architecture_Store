@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		BD16120F2C1AF10700B16F3E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD16120E2C1AF10700B16F3E /* HomeViewController.swift */; };
 		BD1612132C1AF3C300B16F3E /* tmp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1612122C1AF3C300B16F3E /* tmp.swift */; };
+		BD1612152C1AF84900B16F3E /* PhotoCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1612142C1AF84900B16F3E /* PhotoCollectionViewController.swift */; };
+		BD16121C2C1AFEF900B16F3E /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD16121B2C1AFEF900B16F3E /* HomeViewModel.swift */; };
+		BD16121F2C1AFF4100B16F3E /* MockHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD16121E2C1AFF4100B16F3E /* MockHomeViewController.swift */; };
+		BD1612222C1EF45400B16F3E /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1612212C1EF45400B16F3E /* PhotoCollectionViewCell.swift */; };
+		BD1612272C1EF4E200B16F3E /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1612262C1EF4E200B16F3E /* Color.swift */; };
 		BD45E9452C11D3E3000CEFE0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD45E9442C11D3E3000CEFE0 /* AppDelegate.swift */; };
 		BD45E9472C11D3E3000CEFE0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD45E9462C11D3E3000CEFE0 /* SceneDelegate.swift */; };
 		BD45E94E2C11D3E4000CEFE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD45E94D2C11D3E4000CEFE0 /* Assets.xcassets */; };
@@ -18,6 +23,11 @@
 /* Begin PBXFileReference section */
 		BD16120E2C1AF10700B16F3E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		BD1612122C1AF3C300B16F3E /* tmp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tmp.swift; sourceTree = "<group>"; };
+		BD1612142C1AF84900B16F3E /* PhotoCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewController.swift; sourceTree = "<group>"; };
+		BD16121B2C1AFEF900B16F3E /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		BD16121E2C1AFF4100B16F3E /* MockHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockHomeViewController.swift; sourceTree = "<group>"; };
+		BD1612212C1EF45400B16F3E /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		BD1612262C1EF4E200B16F3E /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		BD45E9412C11D3E3000CEFE0 /* Unidirectional_Architecture_Store.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Unidirectional_Architecture_Store.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD45E9442C11D3E3000CEFE0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BD45E9462C11D3E3000CEFE0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -48,7 +58,9 @@
 		BD16120D2C1AF10000B16F3E /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				BD16120E2C1AF10700B16F3E /* HomeViewController.swift */,
+				BD16121D2C1AFF3200B16F3E /* Example */,
+				BD16121A2C1AFEE400B16F3E /* Features */,
+				BD1612192C1AFEC000B16F3E /* Views */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -73,6 +85,64 @@
 			path = Domain;
 			sourceTree = "<group>";
 		};
+		BD1612192C1AFEC000B16F3E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BD1612202C1EF44900B16F3E /* PhotoCollectionView */,
+				BD16120E2C1AF10700B16F3E /* HomeViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BD16121A2C1AFEE400B16F3E /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				BD16121B2C1AFEF900B16F3E /* HomeViewModel.swift */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		BD16121D2C1AFF3200B16F3E /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				BD16121E2C1AFF4100B16F3E /* MockHomeViewController.swift */,
+			);
+			path = Example;
+			sourceTree = "<group>";
+		};
+		BD1612202C1EF44900B16F3E /* PhotoCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				BD1612142C1AF84900B16F3E /* PhotoCollectionViewController.swift */,
+				BD1612212C1EF45400B16F3E /* PhotoCollectionViewCell.swift */,
+			);
+			path = PhotoCollectionView;
+			sourceTree = "<group>";
+		};
+		BD1612232C1EF46E00B16F3E /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				BD1612242C1EF47700B16F3E /* DGUIkit */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		BD1612242C1EF47700B16F3E /* DGUIkit */ = {
+			isa = PBXGroup;
+			children = (
+				BD1612252C1EF4D900B16F3E /* Extensions */,
+			);
+			path = DGUIkit;
+			sourceTree = "<group>";
+		};
+		BD1612252C1EF4D900B16F3E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BD1612262C1EF4E200B16F3E /* Color.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		BD45E9382C11D3E3000CEFE0 = {
 			isa = PBXGroup;
 			children = (
@@ -92,6 +162,7 @@
 		BD45E9432C11D3E3000CEFE0 /* Unidirectional_Architecture_Store */ = {
 			isa = PBXGroup;
 			children = (
+				BD1612232C1EF46E00B16F3E /* Shared */,
 				BD1612112C1AF12D00B16F3E /* Domain */,
 				BD1612102C1AF11B00B16F3E /* App */,
 				BD16120C2C1AF0A900B16F3E /* Presentation */,
@@ -170,9 +241,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD45E9452C11D3E3000CEFE0 /* AppDelegate.swift in Sources */,
+				BD1612222C1EF45400B16F3E /* PhotoCollectionViewCell.swift in Sources */,
+				BD16121C2C1AFEF900B16F3E /* HomeViewModel.swift in Sources */,
+				BD16121F2C1AFF4100B16F3E /* MockHomeViewController.swift in Sources */,
+				BD1612152C1AF84900B16F3E /* PhotoCollectionViewController.swift in Sources */,
 				BD1612132C1AF3C300B16F3E /* tmp.swift in Sources */,
 				BD45E9472C11D3E3000CEFE0 /* SceneDelegate.swift in Sources */,
 				BD16120F2C1AF10700B16F3E /* HomeViewController.swift in Sources */,
+				BD1612272C1EF4E200B16F3E /* Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
