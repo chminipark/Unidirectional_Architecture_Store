@@ -14,6 +14,7 @@
 		BD16121F2C1AFF4100B16F3E /* MockHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD16121E2C1AFF4100B16F3E /* MockHomeViewController.swift */; };
 		BD1612222C1EF45400B16F3E /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1612212C1EF45400B16F3E /* PhotoCollectionViewCell.swift */; };
 		BD1612272C1EF4E200B16F3E /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1612262C1EF4E200B16F3E /* Color.swift */; };
+		BD1612292C1EFE0800B16F3E /* DGViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1612282C1EFE0800B16F3E /* DGViewController.swift */; };
 		BD45E9452C11D3E3000CEFE0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD45E9442C11D3E3000CEFE0 /* AppDelegate.swift */; };
 		BD45E9472C11D3E3000CEFE0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD45E9462C11D3E3000CEFE0 /* SceneDelegate.swift */; };
 		BD45E94E2C11D3E4000CEFE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD45E94D2C11D3E4000CEFE0 /* Assets.xcassets */; };
@@ -28,6 +29,7 @@
 		BD16121E2C1AFF4100B16F3E /* MockHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockHomeViewController.swift; sourceTree = "<group>"; };
 		BD1612212C1EF45400B16F3E /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
 		BD1612262C1EF4E200B16F3E /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		BD1612282C1EFE0800B16F3E /* DGViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DGViewController.swift; sourceTree = "<group>"; };
 		BD45E9412C11D3E3000CEFE0 /* Unidirectional_Architecture_Store.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Unidirectional_Architecture_Store.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD45E9442C11D3E3000CEFE0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BD45E9462C11D3E3000CEFE0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				BD1612262C1EF4E200B16F3E /* Color.swift */,
+				BD1612282C1EFE0800B16F3E /* DGViewController.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -241,6 +244,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD45E9452C11D3E3000CEFE0 /* AppDelegate.swift in Sources */,
+				BD1612292C1EFE0800B16F3E /* DGViewController.swift in Sources */,
 				BD1612222C1EF45400B16F3E /* PhotoCollectionViewCell.swift in Sources */,
 				BD16121C2C1AFEF900B16F3E /* HomeViewModel.swift in Sources */,
 				BD16121F2C1AFF4100B16F3E /* MockHomeViewController.swift in Sources */,

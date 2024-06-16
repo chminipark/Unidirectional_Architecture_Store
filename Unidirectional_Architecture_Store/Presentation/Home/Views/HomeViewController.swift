@@ -7,22 +7,25 @@
 
 import UIKit
 
-final class HomeViewController: UIViewController {
+final class HomeViewController: DGViewController {
   private let togglePhotoPickerButton = UIButton()
   private let photoCollectionViewController = PhotoCollectionViewController()
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    configure()
-    layout()
+  }
+  
+  override func configure() {
+    configureTogglePhotoPickerButton()
+  }
+  
+  override func layout() {
+    layoutTogglePhotoPickerButton()
+//    layoutPhotoCollectionView()
   }
 }
 
 extension HomeViewController {
-  func configure() {
-    configureTogglePhotoPickerButton()
-  }
-  
   func configureTogglePhotoPickerButton() {
     var configuration = UIButton.Configuration.tinted()
     configuration.title = "사진 고르기"
@@ -31,11 +34,6 @@ extension HomeViewController {
 }
 
 extension HomeViewController {
-  func layout() {
-//    layoutTogglePhotoPickerButton()
-    layoutPhotoCollectionView()
-  }
-  
   func layoutTogglePhotoPickerButton() {
     view.addSubview(togglePhotoPickerButton)
     togglePhotoPickerButton.translatesAutoresizingMaskIntoConstraints = false
